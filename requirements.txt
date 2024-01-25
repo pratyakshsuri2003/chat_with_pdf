@@ -1,5 +1,6 @@
 langchain==0.0.316
 pypdf
+flask
 pandas
 matplotlib
 tiktoken
