@@ -17,11 +17,11 @@ app = Flask(__name__)
 os.environ["OPENAI_API_KEY"] = "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"
 
 # Loading PDFs and chunking with LangChain
-loader = PyPDFLoader(r"F:\COMPANY SPECIFIC DOCS\gen ai test\48lawsofpower.pdf")
+loader = PyPDFLoader(r".\48lawsofpower.pdf")
 pages = loader.load_and_split()
 chunks = pages
 
-with open(r"F:\COMPANY SPECIFIC DOCS\gen ai test\48lawsofpower.pdf", 'rb') as f:
+with open(r".\48lawsofpower.pdf", 'rb') as f:
     pdf = PyPDF2.PdfFileReader(f)
     text = " ".join(page.extract_text() for page in pdf.pages)
 
