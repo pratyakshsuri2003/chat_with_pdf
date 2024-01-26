@@ -1,8 +1,11 @@
 langchain==0.0.316
 pypdf
+PyPDF2
 Flask
 pandas
 matplotlib
+torch
+tensorflow
 tiktoken
 textract
 transformers
