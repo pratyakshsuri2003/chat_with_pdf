@@ -14,14 +14,14 @@ import PyPDF2
 app = Flask(__name__)
 
 # Set up LangChain
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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"
 
 # Loading PDFs and chunking with LangChain
-loader = PyPDFLoader(r".\48lawsofpower.pdf")
+loader = PyPDFLoader(r'.\48lawsofpower.pdf')
 pages = loader.load_and_split()
 chunks = pages
 
-with open(r".\48lawsofpower.pdf", 'rb') as f:
+with open(r'.\48lawsofpower.pdf', 'rb') as f:
     pdf = PyPDF2.PdfFileReader(f)
     text = " ".join(page.extract_text() for page in pdf.pages)
 
@@ -62,4 +62,4 @@ def ask_question():
         return render_template('index.html', question=question, answer=answer)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
