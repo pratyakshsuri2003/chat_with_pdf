@@ -2,6 +2,13 @@
 
 This is a Flask application that uses LangChain to load PDFs, chunk the text, create a vector database, and answer questions based on the text.
 
+## Screenshots of the running Application
+
+![interface](https://github.com/pratyakshsuri2003/chat_with_pdf/assets/115720372/570ebe43-3d19-4db9-b7b1-c90cc32eb743)
+![interface3](https://github.com/pratyakshsuri2003/chat_with_pdf/assets/115720372/6f728772-36fe-4f19-9eaa-013a46af7560)
+![interface2](https://github.com/pratyakshsuri2003/chat_with_pdf/assets/115720372/b1f83064-0df0-4672-bcde-a3547785cd67)
+
+
 ## Cloning the Repository
 
 1. Open your terminal.
